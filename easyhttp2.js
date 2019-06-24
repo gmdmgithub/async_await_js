@@ -8,19 +8,7 @@
  * 
  */
 
-
-// class EasyHTTP {
-
-//     //make GET
-//     get(url) {
-//         fetch(url)
-//         .then(res => res.json())
-//         .then(data =>console.log(data))
-//         .catch(err =>console.log(err));
-//     }
-// }
-
-//thse same when you return data - Promise
+//the same when you return data - Promise
 class EasyHTTP {
 
     //make GET

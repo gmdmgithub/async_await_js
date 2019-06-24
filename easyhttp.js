@@ -1,8 +1,10 @@
+// first version is with XMLHttpRequest function - no class just prototype
+
 function easyHttp(){
     this.http = new XMLHttpRequest();
 }
 //make http get request
-//we need callback - asynchronius way - to reead return data
+//we need callback - asynchronous way - to read return data
 easyHttp.prototype.get = function(url, callback){
 
     this.http.open('GET',url,true);
@@ -12,6 +14,7 @@ easyHttp.prototype.get = function(url, callback){
         //console.log(self.http);
         if(self.http.status === 200){
             callback(null,self.http.responseText);
+            
         }else{
             callback(`Error: ${self.http.status}`);
         }

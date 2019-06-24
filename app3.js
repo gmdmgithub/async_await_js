@@ -1,11 +1,9 @@
 const http = new EasyHTTP;
 
 // get user
-// http.get('https://jsonplaceholder.typicode.com/posts');
-
-// http.get('https://jsonplaceholder.typicode.com/users')
-// .then(data=>console.log('getUsers',data))
-// .catch(err=>console.log(err));
+http.get('https://jsonplaceholder.typicode.com/users')
+    .then(data=>console.log('getUsers',data))
+    .catch(err=>console.log(err));
 
 const data = {name:'John Doe',username:'johndoe', email:'john@doe.com'};
 
